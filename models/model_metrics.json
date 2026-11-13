@@ -1,0 +1,210 @@
+{
+  "selected_model": "Logistic Regression",
+  "selection_metric": "Mean churn-class F1 across 5-fold stratified cross-validation",
+  "positive_class": "Churned",
+  "test_size": 1409,
+  "train_size": 5634,
+  "random_state": 42,
+  "cv_folds": 5,
+  "threshold": 0.5,
+  "feature_importance": [
+    {
+      "feature": "numbers__tenure",
+      "importance": 1.1235888074254843
+    },
+    {
+      "feature": "categories__Contract_Two year",
+      "importance": 0.7812566697491463
+    },
+    {
+      "feature": "categories__InternetService_Fiber optic",
+      "importance": 0.7053364815540637
+    },
+    {
+      "feature": "numbers__MonthlyCharges",
+      "importance": 0.663581370388866
+    },
+    {
+      "feature": "categories__Contract_Month-to-month",
+      "importance": 0.663398811347562
+    },
+    {
+      "feature": "categories__InternetService_DSL",
+      "importance": 0.6210094851777699
+    },
+    {
+      "feature": "numbers__TotalCharges",
+      "importance": 0.4572105464813513
+    },
+    {
+      "feature": "categories__StreamingMovies_Yes",
+      "importance": 0.2749783925261089
+    },
+    {
+      "feature": "categories__InternetService_No",
+      "importance": 0.27456847321541733
+    },
+    {
+      "feature": "categories__OnlineSecurity_No internet service",
+      "importance": 0.27456847321541733
+    },
+    {
+      "feature": "categories__OnlineBackup_No internet service",
+      "importance": 0.27456847321541733
+    },
+    {
+      "feature": "categories__DeviceProtection_No internet service",
+      "importance": 0.27456847321541733
+    },
+    {
+      "feature": "categories__TechSupport_No internet service",
+      "importance": 0.27456847321541733
+    },
+    {
+      "feature": "categories__StreamingTV_No internet service",
+      "importance": 0.27456847321541733
+    },
+    {
+      "feature": "categories__StreamingMovies_No internet service",
+      "importance": 0.27456847321541733
+    },
+    {
+      "feature": "categories__PaperlessBilling_No",
+      "importance": 0.26336459585446775
+    },
+    {
+      "feature": "categories__StreamingTV_Yes",
+      "importance": 0.26203759369893787
+    },
+    {
+      "feature": "categories__PaymentMethod_Electronic check",
+      "importance": 0.23880521999293408
+    },
+    {
+      "feature": "categories__MultipleLines_No",
+      "importance": 0.21341528900824916
+    },
+    {
+      "feature": "categories__Dependents_Yes",
+      "importance": 0.20910284400918286
+    }
+  ],
+  "models": {
+    "Logistic Regression": {
+      "cross_validation": {
+        "accuracy_mean": 0.7481378279939669,
+        "accuracy_std": 0.015307487673979193,
+        "precision_mean": 0.5164818566895508,
+        "precision_std": 0.018900944216023587,
+        "recall_mean": 0.8013377926421403,
+        "recall_std": 0.037932968237479145,
+        "f1_mean": 0.6279272719115523,
+        "f1_std": 0.0232252261349826,
+        "roc_auc_mean": 0.8459495012172488,
+        "roc_auc_std": 0.012378974419374121,
+        "pr_auc_mean": 0.6600234497245435,
+        "pr_auc_std": 0.019535762354580603
+      },
+      "accuracy": 0.7381121362668559,
+      "precision": 0.504302925989673,
+      "recall": 0.7834224598930482,
+      "f1": 0.6136125654450262,
+      "roc_auc": 0.8412978893797307,
+      "pr_auc": 0.6325780038908728,
+      "confusion_matrix": {
+        "true_negative": 747,
+        "false_positive": 288,
+        "false_negative": 81,
+        "true_positive": 293
+      },
+      "threshold": 0.5
+    },
+    "Random Forest": {
+      "cross_validation": {
+        "accuracy_mean": 0.7873645589211049,
+        "accuracy_std": 0.011513001267516441,
+        "precision_mean": 0.591478909253444,
+        "precision_std": 0.021603607047738803,
+        "recall_mean": 0.6441471571906355,
+        "recall_std": 0.025871678402426358,
+        "f1_mean": 0.6164734294650759,
+        "f1_std": 0.02047968453642012,
+        "roc_auc_mean": 0.8368244926772344,
+        "roc_auc_std": 0.009349018507695482,
+        "pr_auc_mean": 0.6374853014795347,
+        "pr_auc_std": 0.02651956445691788
+      },
+      "accuracy": 0.7778566359119943,
+      "precision": 0.5734939759036145,
+      "recall": 0.6363636363636364,
+      "f1": 0.6032953105196451,
+      "roc_auc": 0.8339481774264382,
+      "pr_auc": 0.6346739564074307,
+      "confusion_matrix": {
+        "true_negative": 858,
+        "false_positive": 177,
+        "false_negative": 136,
+        "true_positive": 238
+      },
+      "threshold": 0.5
+    },
+    "Decision Tree": {
+      "cross_validation": {
+        "accuracy_mean": 0.7353614887919798,
+        "accuracy_std": 0.020266743045038046,
+        "precision_mean": 0.5019815210659887,
+        "precision_std": 0.024574207509709838,
+        "recall_mean": 0.7959866220735787,
+        "recall_std": 0.02006688963210701,
+        "f1_mean": 0.6152734914314584,
+        "f1_std": 0.019662052010137963,
+        "roc_auc_mean": 0.8255728422834345,
+        "roc_auc_std": 0.010364648630651584,
+        "pr_auc_mean": 0.617499075093737,
+        "pr_auc_std": 0.02129345989782
+      },
+      "accuracy": 0.7402413058907026,
+      "precision": 0.506872852233677,
+      "recall": 0.7887700534759359,
+      "f1": 0.6171548117154811,
+      "roc_auc": 0.8302604045570797,
+      "pr_auc": 0.6150110329715777,
+      "confusion_matrix": {
+        "true_negative": 748,
+        "false_positive": 287,
+        "false_negative": 79,
+        "true_positive": 295
+      },
+      "threshold": 0.5
+    },
+    "Gradient Boosting": {
+      "cross_validation": {
+        "accuracy_mean": 0.8051129943057616,
+        "accuracy_std": 0.010650447354677305,
+        "precision_mean": 0.6737366216387671,
+        "precision_std": 0.0260352093533664,
+        "recall_mean": 0.5150501672240803,
+        "recall_std": 0.02667210974899916,
+        "f1_mean": 0.5836022754238367,
+        "f1_std": 0.024798263957567228,
+        "roc_auc_mean": 0.8498281813578064,
+        "roc_auc_std": 0.01237800158193007,
+        "pr_auc_mean": 0.6686118135793986,
+        "pr_auc_std": 0.022392033728441525
+      },
+      "accuracy": 0.7970191625266146,
+      "precision": 0.6538461538461539,
+      "recall": 0.5,
+      "f1": 0.5666666666666667,
+      "roc_auc": 0.8452569169960473,
+      "pr_auc": 0.6634723817697701,
+      "confusion_matrix": {
+        "true_negative": 936,
+        "false_positive": 99,
+        "false_negative": 187,
+        "true_positive": 187
+      },
+      "threshold": 0.5
+    }
+  }
+}
